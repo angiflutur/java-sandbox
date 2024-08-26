@@ -1,12 +1,12 @@
 package lab1.task2;
 
 public class Student {
-    String name;
-    double grade;
+    private String name;
+    private double grade;
 
-    public Student(double grade, String name) {
-        this.grade = grade;
+    public Student(String name, double grade) {
         this.name = name;
+        this.grade = grade;
     }
 
     public void setName(String name) {
