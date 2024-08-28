@@ -30,17 +30,15 @@ public class Internship {
         return minGrade;
     }
 
-    public Student choseCandidateRandomly()
-    {
+    public Student choseCandidateRandomly() {
         Random rand = new Random();
         int index = rand.nextInt(students.length);
         return students[index];
     }
 
-    public void chooseCandidatesForInterview(){
-        for(int i = 0; i < students.length; i++)
-            if(students[i].getGrade() >= Float.parseFloat(minGrade))
-            {
+    public void chooseCandidatesForInterview() {
+        for (int i = 0; i < students.length; i++)
+            if (students[i].getGrade() >= Float.parseFloat(minGrade)) {
                 System.out.println("Candidate " + students[i].getName() + " got a phone interview at " + getName());
             }
     }
